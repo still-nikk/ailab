@@ -296,16 +296,19 @@ if __name__ == "__main__":
 # - Still random trial, no learning.
 
 # 3. Backpropagation MLP with Sigmoid Activation:
+# sigma(x) = 1 / (1 + e ^ (-x))
 # - Proper learning using backpropagation.
 # - Activation function is Sigmoid.
 # - Weights and biases are updated based on error gradients.
 
 # 4. Backpropagation MLP with ReLU Activation:
+# reLu(x) = max(0, x)
 # - Learning using backpropagation.
 # - Activation function is ReLU.
 # - Faster convergence in many cases compared to Sigmoid.
 
 # 5. Backpropagation MLP with Tanh Activation:
+# tanh(x) = ((e^x) - (e^-x)) / ((e^x) + (e^-x))
 # - Learning using backpropagation.
 # - Activation function is Tanh.
 # - Output centered between -1 and +1 for better balance.
